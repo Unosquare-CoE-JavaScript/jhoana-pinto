@@ -1,7 +1,5 @@
 ## Definitions for chapter 1
 
-######
-
 **TC39:** Technical Committee number 39 (In charge of standarization of JS language under the "ECMAScript" specification)
 
 **DX:** Developer Experience
@@ -21,6 +19,5 @@ as valid JS, there will not be a future change to the language that causes that 
 
 ![ATS e.g.](https://miro.medium.com/proxy/0*fp0pltRxvzjAkwbU.png)
 
-deferfg
+**WASM (Web Assembly):** portable binary code format for scripts web execution on the client side.
 
-JS is a multi-paradigm language
