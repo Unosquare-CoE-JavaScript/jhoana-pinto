@@ -21,7 +21,7 @@ the program. Allows a usage in a wider scope.
 
 - **Null** is an object. It can be assigned to a variable as a representation of no value. **JavaScript never sets a value to null.** That must be done programmatically.
 
-## Funtcions
+## Functions
 
 ###### Function declaration
 
