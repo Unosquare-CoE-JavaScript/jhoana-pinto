@@ -9,4 +9,6 @@ capabilities allow a developer to mix and match concepts from various major para
 
 -Is important to implement Strict mode because it offers a guide to better our JS coding, it should always be implemented on the first line or as a first instruction (comments and blank spaces can be included before de "use strict" pragma).
 
-> "use strict";
+```js
+ "use strict";
+```
