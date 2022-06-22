@@ -34,6 +34,17 @@ This last line will execute every promise inside an array. The *traverse* method
 
 Either.of() << Important! some sort of IF>ELSE>THEN, it receives a Left or Right as a value.
 
+###### Functors
+
+>A functor is any object that can be used with () in the manner of a function. This includes normal functions, pointers to functions, and class objects for which the () operator (function call operator) is overloaded, i.e., classes for which the function operator()() is defined.
+
+*source: https://www.bogotobogo.com/functors.php*
+
+###### Monads
+
+> Monad is a design pattern used to describe computations as a series of steps. They are extensively used to manage side effects
+
+*source: https://curiosity-driven.org/monads-in-javascript*
 
 ###### Natural transformation
 
@@ -42,3 +53,4 @@ Is a type transformation, changes the container without changing the value. The 
 const eitherToTask = e =>
   e.fold(Task.rejected, Task.of)
 ```
+
