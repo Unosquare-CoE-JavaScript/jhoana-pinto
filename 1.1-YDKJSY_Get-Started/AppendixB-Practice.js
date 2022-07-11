@@ -12,8 +12,8 @@ let dayEnd = "17:45";
 
 function scheduleMeeting( startTime, duration ){
   
-    let afterDayStart = (Number(startTime.substring(0,2))*60 + Number(startTime.substring(3,5)))>(Number(dayStart.substring(0,2)*60)+Number(dayStart.substring(3,5)))
-    let beforeDayEnd = (Number(startTime.substring(0,2))*60 + Number(startTime.substring(3,5)))<(Number(dayEnd.substring(0,2)*60)+Number(dayEnd.substring(3,5)))
+    let afterDayStart = (Number(startTime.substring(0,2))*60 + Number(startTime.substring(3,5)))>=(Number(dayStart.substring(0,2)*60)+Number(dayStart.substring(3,5)))
+    let beforeDayEnd = (Number(startTime.substring(0,2))*60 + Number(startTime.substring(3,5)))<=(Number(dayEnd.substring(0,2)*60)+Number(dayEnd.substring(3,5)))
     
     if(afterDayStart&&beforeDayEnd){
 
@@ -24,14 +24,15 @@ function scheduleMeeting( startTime, duration ){
 
         let minRestante = hrsRest*60 + Number(minRest);
 
-        if(duration < minRestante){
+        if(duration <= minRestante){
             return true;
         } else return false;
 
     } else return false;
 }
 
-//scheduleMeeting("16:00", 50);
+let eg1 = scheduleMeeting("07:30", 46);
+//console.log(eg1)
 
 /* >>  CLOSURES
 
@@ -62,7 +63,8 @@ function range(start,end) {
     }
 }
 
-//console.log(range(5));
+let eg2 = range(5,0)
+//console.log(eg2);
 
 
 /* >>  PROTOTYPES
@@ -152,4 +154,5 @@ var slotMachine = {
     }
 };
 slotMachine.spin();
-slotMachine.display();
+let eg3 = slotMachine.display();
+console.log(eg3);
