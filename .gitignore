@@ -1,4 +1,7 @@
 *.json
+*.bin
+*.png
+*.config.js
 node_modules
 apiKey.js
 keys.js
